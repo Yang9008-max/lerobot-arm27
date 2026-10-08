@@ -65,11 +65,6 @@ pwsh -ExecutionPolicy Bypass -File tools\setup_env.ps1
 - 仓库里带了 `data/arm27_push`（5 集真实采集）；其它 `data/*` 是早期的探针/测速集，没有上传。
 - 全部实测环境事实（版本、代理陷阱、相机档位、踩过的坑）见 `docs/ENVIRONMENT.md`。
 
-```powershell
-# 每个新 shell 先做这个（把缓存全部重定向出只剩 3 GB 的 C 盘，并自动处理 Clash 代理）
-. .\tools\env.ps1
-```
-
 ### 离线验证（不需要任何硬件）
 
 ```powershell
