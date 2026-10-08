@@ -1,0 +1,14 @@
+# Keep line endings identical on every machine that clones this repo.  Without
+# this, Git on Windows rewrites every text file to CRLF on checkout and the diff
+# noise hides real changes.
+* text=auto eol=lf
+
+# Binary - never diff, never convert.
+*.parquet binary
+*.mp4 binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.npy binary
+*.pt binary
+*.safetensors binary

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=71"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arm-lerobot"
+version = "0.1.0"
+description = "LeRobot integration for the 27_engineer three-axis Damiao arm and Orbbec Gemini 2"
+requires-python = ">=3.12"
+dependencies = [
+    "pyserial>=3.5",
+    "numpy>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

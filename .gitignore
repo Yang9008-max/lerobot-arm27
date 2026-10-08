@@ -1,0 +1,43 @@
+# ------------------------------------------------------------------ venv/caches
+# Rebuilt by tools/setup_env.ps1.  .venv is 1.6 GB, .cache is 0.5 GB - they must
+# never enter git, and both are fully reproducible from pyproject.toml +
+# setup_env.ps1.
+.venv/
+.cache/
+Log/
+torchinductor_*/
+
+# -------------------------------------------------------------------- artifacts
+# Contact sheets, decoded frames, training runs.  Evidence, not source.
+outputs/
+
+# ---------------------------------------------------------------------- datasets
+# Only the real push dataset is versioned (see README "数据集" section).  The
+# rest are probe/rate-test runs kept locally.
+#
+# Pattern note: a directory cannot be re-included once it is excluded, so the
+# negation has to name both the directory and its contents.
+data/**
+!data/arm27_push/
+!data/arm27_push/**
+
+# ----------------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------- windows/editors
+Thumbs.db
+desktop.ini
+ehthumbs.db
+.vscode/
+.idea/
+*.swp
+*~
