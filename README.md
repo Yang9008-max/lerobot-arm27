@@ -290,3 +290,13 @@ LeRobot 的时间戳按 `timestamp = frame_index / fps` 生成，所以**声明�
 3. 采 30–50 条，传云卡训 ACT
 4. 阶段 2：出固件方案（UART7 加 CRC 目标角帧、`rxNop` 换解析器、超时失能、
    遥控器降级为使能/急停闸门），按 `AI_GUARDRAILS.md` 先确认再动手
+
+## HZU 整机 URDF（独立模型）
+
+新增 [HZU 模型说明与整机预览](models/hzu_robot/README.md)：包含底盘、四轮、主要电机与六轴机械臂；提供可由 MuJoCo 直接加载的 URDF、188 项网格和独立查看脚本。该模型与本仓库现有 `arm_27` 三轴硬件接口不同，当前用途为整机几何与输出侧运动学检查，物理与控制接入边界见模型说明。
+
+```powershell
+python -m pip install -r models/hzu_robot/requirements.txt
+python tools/view_hzu.py --check
+python tools/view_hzu.py
+```

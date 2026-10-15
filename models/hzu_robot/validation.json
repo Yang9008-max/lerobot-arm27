@@ -1,0 +1,484 @@
+{
+  "schema_version": 1,
+  "urdf_actually_loaded": true,
+  "engine": "MuJoCo 3.14.0",
+  "links": 11,
+  "active_joints": 10,
+  "visual_geoms": 578,
+  "unique_meshes": 188,
+  "configurations": 27,
+  "mesh_vertex_max_error_m": 6.97717674544872e-11,
+  "max_pose_error": 5.013313535825269e-14,
+  "pose_checks": [
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 2.7755575615628914e-17,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 2.220446049250313e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 2.220446049250313e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 2.220446049250313e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 2.220446049250313e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 2.220446049250313e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295,
+        0.0
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.17453292519943295
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.17453292519943295
+      ],
+      "max_body_matrix_error": 1.1102230246251565e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        -0.0964085552023466,
+        0.038508948510380364,
+        -0.011044475674537979,
+        -0.038377031858730704,
+        -0.218007997808063,
+        0.11663906379194214,
+        -0.2104035893368844,
+        0.16934165119541847,
+        0.13098727770142796,
+        0.16474344424477097
+      ],
+      "max_body_matrix_error": 4.440892098500626e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.18350163582677373,
+        0.03657244479849128,
+        0.17832792400110978,
+        -0.02160041988024128,
+        0.07181414835598779,
+        -0.11664622791608659,
+        -0.06363775359752344,
+        0.002095134480363081,
+        0.13156922545147962,
+        -0.20195803608264723
+      ],
+      "max_body_matrix_error": 4.440892098500626e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.004035197647954208,
+        -0.20423231798603536,
+        0.16076041163397112,
+        0.15541550947553254,
+        -0.03371256958372565,
+        -0.1031541154654428,
+        0.029548805188456095,
+        0.17176890328589364,
+        0.07550648385840783,
+        0.16614318463440167
+      ],
+      "max_body_matrix_error": 2.220446049250313e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        0.2170651562818409,
+        -0.009247299068755294,
+        -0.06745236109980532,
+        0.08840346404487984,
+        -0.10230607520351544,
+        0.00968509764511713,
+        -0.10289557945128053,
+        0.17594619275025467,
+        0.024095210219668206,
+        0.015471238830153278
+      ],
+      "max_body_matrix_error": 4.440892098500626e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        -0.031171047111608424,
+        0.1701772246996983,
+        -0.0569651470160161,
+        -0.1718481054852594,
+        0.14075013810047857,
+        0.09721163708479189,
+        0.2115877179450665,
+        0.01712730786791633,
+        -0.039873237498394554,
+        0.17089252823668424
+      ],
+      "max_body_matrix_error": 4.440892098500626e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    },
+    {
+      "q_rad": [
+        -0.21506288664794943,
+        0.20865814935458807,
+        -0.17202654403904571,
+        0.12282580371930726,
+        0.002001800418629962,
+        -0.13665626186736943,
+        -0.1990048703101458,
+        0.1917216922142013,
+        0.026742427361632903,
+        0.03130468802553196
+      ],
+      "max_body_matrix_error": 3.3306690738754696e-16,
+      "max_visual_matrix_error": 5.013313535825269e-14,
+      "max_imported_mesh_corner_error_m": 2.05095675028416e-15
+    }
+  ],
+  "original_files_hash_checked": 192,
+  "wheel_coaxial_checks": 12,
+  "all_checks_passed": true,
+  "scope": "all exported vertices, all occurrence poses, source hashes, four hub axes and 27 kinematic configurations",
+  "not_validated": [
+    "physical collision/travel/dynamics",
+    "motor encoder mapping",
+    "passive suspension/rollers and differential drive"
+  ],
+  "no_time_integration_performed": true,
+  "mujoco_mass_inertia": "compiler numerical floors only; not physical parameters"
+}

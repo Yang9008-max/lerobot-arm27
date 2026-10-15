@@ -1,0 +1,20 @@
+{
+  "arm": [
+    "joint_1_base_yaw",
+    "joint_2_shoulder_pitch",
+    "joint_3_elbow_pitch",
+    "joint_4_forearm_roll",
+    "joint_5_wrist_pitch",
+    "joint_6_tool_roll"
+  ],
+  "wheels": [
+    "joint_wheel_626",
+    "joint_wheel_683",
+    "joint_wheel_712",
+    "joint_wheel_713"
+  ],
+  "units": "rad",
+  "q0": "saved CAD pose",
+  "not_encoder_zero": true,
+  "suction": "separate boolean; not simulated"
+}
