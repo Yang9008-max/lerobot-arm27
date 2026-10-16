@@ -290,3 +290,22 @@ LeRobot 的时间戳按 `timestamp = frame_index / fps` 生成，所以**声明�
 3. 采 30–50 条，传云卡训 ACT
 4. 阶段 2：出固件方案（UART7 加 CRC 目标角帧、`rxNop` 换解析器、超时失能、
    遥控器降级为使能/急停闸门），按 `AI_GUARDRAILS.md` 先确认再动手
+
+## HZU 整机 URDF（独立模型）
+
+新增 [HZU 模型说明与整机预览](models/hzu_robot/README.md)：包含底盘、四轮、主要电机与六轴机械臂；提供可由 MuJoCo 直接加载的 URDF、188 项网格和独立查看脚本。该模型与本仓库现有 `arm_27` 三轴硬件接口不同，当前用途为整机几何与输出侧运动学检查，物理与控制接入边界见模型说明。
+
+```powershell
+python -m pip install -r models/hzu_robot/requirements.txt
+python tools/view_hzu.py --check
+python tools/view_hzu.py
+```
+
+## HZU 完整工程资料
+
+[完整工程快照与还原说明](projects/HZU工程机器人/README.md)包含 3,057 个文件，其中 545 个为原始 CAD、图纸和说明资料，另含 URDF、网格、处理脚本、配置及验证记录。大文件使用 117 个 ZIP64 分卷保存，提供逐文件 SHA-256 清单和仅依赖 Python 标准库的还原脚本。缓存、锁文件及上传暂存目录未收录。
+
+```powershell
+python "projects/HZU工程机器人/restore_project.py" --check
+python "projects/HZU工程机器人/restore_project.py" --output "D:/HZU工程机器人"
+```

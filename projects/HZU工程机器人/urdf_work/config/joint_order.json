@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "output_joint_order_selected_after_CAD_review",
+  "joint_names": [
+    "joint_1_base_yaw",
+    "joint_2_shoulder_pitch",
+    "joint_3_elbow_pitch",
+    "joint_4_forearm_roll",
+    "joint_5_wrist_pitch",
+    "joint_6_tool_roll"
+  ],
+  "unit": "rad",
+  "reference_zero": "CAD saved reference; not hardware encoder zero",
+  "suction": "separate on/off channel; not one of the six rotational joints",
+  "hardware_channel_mapping": null
+}

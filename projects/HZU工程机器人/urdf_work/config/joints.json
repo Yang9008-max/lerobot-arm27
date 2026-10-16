@@ -1,0 +1,1648 @@
+{
+  "schema_version": 1,
+  "stage": "CAD_supported_six_output_chain_model_frames_verified",
+  "ready_for_urdf_release": false,
+  "reference_frame": "saved mechanical arm assembly frame A: mm for measurements; directions dimensionless",
+  "numbering": "new proposed base-to-tool numbering; source CAD joint-number names are retained as evidence only",
+  "saved_pose_is_control_zero": false,
+  "end_assembly_in_arm_matrix_mm": [
+    [
+      -1.1806588749874478e-15,
+      -1.722010742609906e-16,
+      -1.0,
+      -623.0478563894071
+    ],
+    [
+      0.9992395295967942,
+      0.03899182595336202,
+      -1.1757513333741953e-15,
+      1.199999999999875
+    ],
+    [
+      0.03899182595336203,
+      -0.9992395295967945,
+      1.9163106616738331e-16,
+      174.99999999999167
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "joints": [
+    {
+      "number": 1,
+      "name": "joint_1_base_yaw",
+      "label_zh": "底座回转",
+      "parent": "chassis_mount",
+      "child": "yaw_base",
+      "type_candidate": "revolute",
+      "type": "revolute",
+      "saved_pose_axis_in_arm_frame": {
+        "point_mm": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      },
+      "geometry_evidence": [
+        {
+          "point_mm": [
+            4.9681148084346205e-11,
+            1.539888216939289e-10,
+            -29.999999999998458
+          ],
+          "axis": [
+            -3.6372692933289076e-16,
+            4.691961483689576e-15,
+            -1.0
+          ],
+          "evidence": {
+            "assembly_path": "HZU工程完整装配.SLDASM",
+            "assembly_sha256": "ebe5ee91c2b694ea461e58dc52d67a2c4b7738d2c2e96cf157bcb62999113c35",
+            "instance_id": "4/245",
+            "name": "机械臂-固定板",
+            "native_path": "底架/机械臂-固定板.SLDPRT",
+            "native_sha256": "829fcbf189b4e72432d502ef8f049a5860be7e98564ae1e7208cdd63c3746951",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/底盘/机械臂-固定板X1.STEP",
+            "radius_mm": 26.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            4.956746124662459e-11,
+            1.5404566511278972e-10,
+            -14.999999999998458
+          ],
+          "axis": [
+            6.722697266721505e-16,
+            -4.3331408438238564e-15,
+            1.0
+          ],
+          "evidence": {
+            "assembly_path": "HZU工程完整装配.SLDASM",
+            "assembly_sha256": "ebe5ee91c2b694ea461e58dc52d67a2c4b7738d2c2e96cf157bcb62999113c35",
+            "instance_id": "4/263",
+            "name": "交叉滚子轴承上垫板",
+            "native_path": "机械臂1/Yaw轴/交叉滚子轴承上垫板.SLDPRT",
+            "native_sha256": "9184f63834069996d11bdad1c11776ce01320b30d9ead7b73fde101eb034957a",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/底盘/交叉滚子轴承上垫板X1.STEP",
+            "radius_mm": 15,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "axis": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "evidence": {
+            "assembly_path": "机械臂1/机械臂装配.SLDASM",
+            "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+            "instance_id": "4/7",
+            "name": "底板",
+            "native_path": "机械臂1/底板.SLDPRT",
+            "native_sha256": "39ece775d7dd255816093a0be5687fbda9e66fe954a9ae002af333131708465f",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/机械臂底座/底板X1.STEP",
+            "radius_mm": 10,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        }
+      ],
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_status": "model frame verified against independent FK",
+      "zero_definition": "saved CAD reference chosen as model q=0; hardware zero unknown",
+      "limits": null,
+      "actuators": [
+        "4310"
+      ],
+      "transmission": {
+        "type": "timing_belt",
+        "driver_teeth_candidate": 25,
+        "driven_teeth_candidate": 56,
+        "output_per_motor_output_candidate": 0.44642857142857145,
+        "ratio_evidence": "CAD component names",
+        "ratio_confirmed": false
+      },
+      "geometry_status": "coaxial_geometry_supported",
+      "motion_status": "CAD_supported_output_chain_with_verified_model_frames",
+      "positive_direction_status": "not_motor_calibrated",
+      "user_confirmed": false,
+      "verification_report": "urdf_work/evidence/joint_motion_verification.json"
+    },
+    {
+      "number": 2,
+      "name": "joint_2_shoulder_pitch",
+      "label_zh": "大臂俯仰",
+      "parent": "yaw_base",
+      "child": "upper_arm",
+      "type_candidate": "revolute",
+      "type": "revolute",
+      "saved_pose_axis_in_arm_frame": {
+        "point_mm": [
+          0,
+          0,
+          175
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "geometry_evidence": [
+        {
+          "point_mm": [
+            2.181739101676277e-14,
+            -54.999999999999986,
+            175.0
+          ],
+          "axis": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "evidence": {
+            "assembly_path": "机械臂1/机械臂装配.SLDASM",
+            "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+            "instance_id": "4/23",
+            "name": "8009侧板",
+            "native_path": "机械臂1/8009侧板.SLDPRT",
+            "native_sha256": "c4f9ebaa0e1db30c1f52abc52d3cbb279182426113482c5324475f2842ebf662",
+            "local_point_mm": [
+              0,
+              70,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/机械臂底座/8009侧板X1.STEP",
+            "radius_mm": 5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -3.0411229090532288e-12,
+            -42.499999999999915,
+            174.9999999999918
+          ],
+          "axis": [
+            -4.256126800357895e-19,
+            -1.0,
+            3.48849753404729e-18
+          ],
+          "evidence": {
+            "assembly_path": "机械臂1/机械臂装配.SLDASM",
+            "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+            "instance_id": "101/107",
+            "name": "侧板大（左）",
+            "native_path": "机械臂1/侧板大（左）.SLDPRT",
+            "native_sha256": "686b1ebd9bb3b30b568563c6c2f339e9a6141cbbf2d70eff586b13460f3eccaa",
+            "local_point_mm": [
+              150,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/大臂/侧板大（左）X1.STEP",
+            "radius_mm": 5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        }
+      ],
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.175
+      ],
+      "origin_rpy_rad": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_status": "model frame verified against independent FK",
+      "zero_definition": "saved CAD reference chosen as model q=0; hardware zero unknown",
+      "limits": null,
+      "actuators": [
+        "8009_base"
+      ],
+      "transmission": {
+        "type": "timing_belt",
+        "driver_teeth_candidate": 28,
+        "driven_teeth_candidate": 56,
+        "output_per_motor_output_candidate": 0.5,
+        "ratio_evidence": "CAD component names and two separated axes",
+        "ratio_confirmed": false
+      },
+      "geometry_status": "coaxial_geometry_supported",
+      "motion_status": "CAD_supported_output_chain_with_verified_model_frames",
+      "positive_direction_status": "not_motor_calibrated",
+      "user_confirmed": false,
+      "verification_report": "urdf_work/evidence/joint_motion_verification.json"
+    },
+    {
+      "number": 3,
+      "name": "joint_3_elbow_pitch",
+      "label_zh": "小臂俯仰",
+      "parent": "upper_arm",
+      "child": "forearm",
+      "type_candidate": "revolute",
+      "type": "revolute",
+      "saved_pose_axis_in_arm_frame": {
+        "point_mm": [
+          -300,
+          0,
+          175
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      "geometry_evidence": [
+        {
+          "point_mm": [
+            -300.00000000000307,
+            42.500000000000085,
+            174.9999999999918
+          ],
+          "axis": [
+            -2.77555756156289e-17,
+            1.0,
+            7.377054577201532e-18
+          ],
+          "evidence": {
+            "assembly_path": "机械臂1/机械臂装配.SLDASM",
+            "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+            "instance_id": "101/110",
+            "name": "侧板大（右）",
+            "native_path": "机械臂1/侧板大（右）.SLDPRT",
+            "native_sha256": "812f6aa2fd616a8c5b2dc1f49da3736fd21a3bdea1aa0e84001bbd4d4ad9965e",
+            "local_point_mm": [
+              150,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/大臂/侧板大（右）X1.STEP",
+            "radius_mm": 9,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -300.00000000000256,
+            39.200000000000166,
+            174.99999999999199
+          ],
+          "axis": [
+            1.4865088789184067e-16,
+            -1.0,
+            -9.609389596972127e-17
+          ],
+          "evidence": {
+            "assembly_path": "机械臂1/机械臂装配.SLDASM",
+            "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+            "instance_id": "153/159",
+            "name": "侧板小（右）",
+            "native_path": "机械臂1/侧板小（右）.SLDPRT",
+            "native_sha256": "fea0d280c46b06f882f56270c1a70fde1240bbbb5e16f4520608afb35710e4e0",
+            "local_point_mm": [
+              105,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/小臂/侧板小（右）X1.STEP",
+            "radius_mm": 6,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        }
+      ],
+      "origin_xyz_m": [
+        -0.3,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_status": "model frame verified against independent FK",
+      "zero_definition": "saved CAD reference chosen as model q=0; hardware zero unknown",
+      "limits": null,
+      "actuators": [
+        "8009_elbow"
+      ],
+      "transmission": {
+        "type": "coaxial_output_candidate",
+        "ratio_confirmed": false
+      },
+      "geometry_status": "coaxial_geometry_supported",
+      "motion_status": "CAD_supported_output_chain_with_verified_model_frames",
+      "positive_direction_status": "not_motor_calibrated",
+      "user_confirmed": false,
+      "verification_report": "urdf_work/evidence/joint_motion_verification.json"
+    },
+    {
+      "number": 4,
+      "name": "joint_4_forearm_roll",
+      "label_zh": "前臂轴向旋转",
+      "parent": "forearm",
+      "child": "wrist_housing",
+      "type_candidate": "revolute",
+      "type": "revolute",
+      "saved_pose_axis_in_arm_frame": {
+        "point_mm": [
+          -547.9999999999972,
+          1.199999999999963,
+          174.99999999999164
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ]
+      },
+      "geometry_evidence": [
+        {
+          "point_mm": [
+            -506.0000000000029,
+            1.2000000000001871,
+            174.9999999999915
+          ],
+          "axis": [
+            1.0,
+            3.762858542932477e-17,
+            2.109423746787797e-15
+          ],
+          "evidence": {
+            "assembly_path": "机械臂1/机械臂装配.SLDASM",
+            "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+            "instance_id": "153/156",
+            "name": "固定板",
+            "native_path": "机械臂1/固定板.SLDPRT",
+            "native_sha256": "a40c9a2c029cefb7d47b9c524bd22fd9e3e1be1c7fd93373ed0bc055e26b4482",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/小臂/固定板X1.STEP",
+            "radius_mm": 12.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -547.9999999999972,
+            1.199999999999963,
+            174.99999999999164
+          ],
+          "axis": [
+            -1.0,
+            -1.1757513333741953e-15,
+            1.9163106616738331e-16
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "7",
+            "name": "joint4输出垫高板",
+            "native_path": "末端零件/joint4输出垫高板.SLDPRT",
+            "native_sha256": "a33fc15246bd125518d601b48332fd534adb60c48ce17456fec2742dad4aafae",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/末端/joint4输出垫高板x1.STEP",
+            "radius_mm": 12.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -551.999999999997,
+            1.199999999999946,
+            174.99999999999164
+          ],
+          "axis": [
+            -1.0,
+            -1.1387210281887832e-15,
+            1.7375689405910563e-16
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "10",
+            "name": "link3连接板(改)",
+            "native_path": "末端零件/link3连接板(改).SLDPRT",
+            "native_sha256": "9c584d6868b79ead4022af0a538b26cc423772198efc5a8589eff6413f8a273c",
+            "local_point_mm": [
+              43.825,
+              0,
+              35
+            ],
+            "local_axis": [
+              0,
+              1,
+              0
+            ],
+            "geometry_path": "加工/碳板/末端/link3连接板(改)x1.STEP",
+            "radius_mm": 12.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        }
+      ],
+      "origin_xyz_m": [
+        -0.24799999999999717,
+        0.001199999999999963,
+        -8.354428260304303e-15
+      ],
+      "origin_rpy_rad": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "origin_status": "model frame verified against independent FK",
+      "zero_definition": "saved CAD reference chosen as model q=0; hardware zero unknown",
+      "limits": null,
+      "actuators": [
+        "GM6020"
+      ],
+      "transmission": {
+        "type": "coaxial_output_candidate",
+        "ratio_confirmed": false
+      },
+      "geometry_status": "coaxial_geometry_supported",
+      "motion_status": "CAD_supported_output_chain_with_verified_model_frames",
+      "positive_direction_status": "not_motor_calibrated",
+      "user_confirmed": false,
+      "verification_report": "urdf_work/evidence/joint_motion_verification.json"
+    },
+    {
+      "number": 5,
+      "name": "joint_5_wrist_pitch",
+      "label_zh": "腕部俯仰",
+      "parent": "wrist_housing",
+      "child": "wrist_carrier",
+      "type_candidate": "revolute",
+      "type": "revolute",
+      "saved_pose_axis_in_arm_frame": {
+        "point_mm": [
+          -650.9999999999973,
+          3.1936419580489925,
+          175.15934786822885
+        ],
+        "axis": [
+          1.704022496595407e-15,
+          -0.9968209790238547,
+          -0.07967393411853056
+        ]
+      },
+      "geometry_evidence": [
+        {
+          "point_mm": [
+            -650.9999999999973,
+            44.8856794057232,
+            178.49171016273652
+          ],
+          "axis": [
+            1.704022496595407e-15,
+            -0.9968209790238547,
+            -0.07967393411853056
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "69",
+            "name": "2006固定板",
+            "native_path": "末端零件/2006固定板.SLDPRT",
+            "native_sha256": "58ed434a9f7afc810d328c16bb01e81efa9351db9f142e3dd124a02661f46146",
+            "local_point_mm": [
+              0,
+              38.25,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/末端/2006固定板x2.STEP",
+            "radius_mm": 10.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -650.9999999999972,
+            -38.49839548962522,
+            171.82698557372117
+          ],
+          "axis": [
+            1.704022496595407e-15,
+            -0.9968209790238547,
+            -0.07967393411853056
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "72",
+            "name": "2006固定板",
+            "native_path": "末端零件/2006固定板.SLDPRT",
+            "native_sha256": "58ed434a9f7afc810d328c16bb01e81efa9351db9f142e3dd124a02661f46146",
+            "local_point_mm": [
+              0,
+              38.25,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/末端/2006固定板x2.STEP",
+            "radius_mm": 10.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -650.9999999999968,
+            35.91429059450727,
+            177.77464475566964
+          ],
+          "axis": [
+            -1.2520255912515639e-15,
+            0.9968209790238546,
+            0.07967393411853112
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "91",
+            "name": "吸盘连接侧板",
+            "native_path": "末端零件/吸盘连接侧板.SLDPRT",
+            "native_sha256": "f3af2ac508b87e44c7aed0978f4576924c1d87799651376fd20f27e4b55164cd",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/末端/吸盘连接侧板X2.STEP",
+            "radius_mm": 10.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -650.9999999999968,
+            -37.50157451060056,
+            171.90665950784006
+          ],
+          "axis": [
+            -1.6921702360653766e-15,
+            0.9968209790238546,
+            0.07967393411853095
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "94",
+            "name": "吸盘连接侧板",
+            "native_path": "末端零件/吸盘连接侧板.SLDPRT",
+            "native_sha256": "f3af2ac508b87e44c7aed0978f4576924c1d87799651376fd20f27e4b55164cd",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/末端/吸盘连接侧板X2.STEP",
+            "radius_mm": 10.5,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        }
+      ],
+      "origin_xyz_m": [
+        -0.10300000000000009,
+        0.00199364195804903,
+        0.00015934786823720848
+      ],
+      "origin_rpy_rad": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        1.704022496595407e-15,
+        -0.9968209790238547,
+        -0.07967393411853056
+      ],
+      "origin_status": "model frame verified against independent FK",
+      "zero_definition": "saved CAD reference chosen as model q=0; hardware zero unknown",
+      "limits": null,
+      "actuators": [
+        "M2006_end_instance_43_ref_2",
+        "M2006_end_instance_46_ref_4"
+      ],
+      "transmission": {
+        "type": "two_motor_bevel_differential_CAD_supported",
+        "coupled_with": "joint_6_tool_roll",
+        "motor_to_joint_matrix": null,
+        "motor_to_joint_matrix_status": "hardware_signs_and_reductions_unverified",
+        "ratio_confirmed": false,
+        "measured_print_mesh_teeth": {
+          "output_bevel": 51,
+          "side_bevel": 18,
+          "side_pulley": 20,
+          "motor_pulley": 20
+        },
+        "ideal_side_pinion_to_output_mapping": {
+          "input": "two side pinion angles about common housing-fixed J5 axis",
+          "output": "carrier angle, spin angle with algebraically selected sign",
+          "matrix": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.17647058823529413,
+              -0.17647058823529413
+            ]
+          ],
+          "rank": 2,
+          "spin_sign_to_measured_J6_axis": null,
+          "assumptions": [
+            "both 18-tooth pinions mesh with the supplied 51-tooth gear",
+            "ideal rigid no-slip gearing; no backlash or elastic slip"
+          ],
+          "hardware_motor_to_joint_matrix": null,
+          "motor_internal_reduction_and_encoder_signs_included": false
+        },
+        "verification_report": "urdf_work/evidence/wrist_verification.json"
+      },
+      "geometry_status": "coaxial_geometry_supported",
+      "motion_status": "CAD_supported_output_chain_with_verified_model_frames",
+      "positive_direction_status": "not_motor_calibrated",
+      "user_confirmed": false,
+      "verification_report": "urdf_work/evidence/joint_motion_verification.json"
+    },
+    {
+      "number": 6,
+      "name": "joint_6_tool_roll",
+      "label_zh": "吸盘自转",
+      "parent": "wrist_carrier",
+      "child": "suction_tool",
+      "type_candidate": "revolute",
+      "type": "revolute",
+      "saved_pose_axis_in_arm_frame": {
+        "point_mm": [
+          -677.4730069664926,
+          1.2952729081585228,
+          173.80801626483327
+        ],
+        "axis": [
+          -0.9989813949620727,
+          0.0035952040814645914,
+          -0.044980518307862594
+        ]
+      },
+      "geometry_evidence": [
+        {
+          "point_mm": [
+            -677.4730069664926,
+            1.2952729081585228,
+            173.80801626483327
+          ],
+          "axis": [
+            -0.9989813949620727,
+            0.0035952040814645914,
+            -0.044980518307862594
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "78",
+            "name": "吸盘固定板",
+            "native_path": "末端零件/吸盘固定板.SLDPRT",
+            "native_sha256": "f650779f52786df462a11f522fad1a9d8c0a8e4846c28fba0793801e6d5c406b",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": "加工/碳板/末端/吸盘固定板X1.STEP",
+            "radius_mm": 21,
+            "method": "STEP_cylinder_and_saved_instance_transform"
+          }
+        },
+        {
+          "point_mm": [
+            -674.9755534790874,
+            1.286284897956858,
+            173.92046756060333
+          ],
+          "axis": [
+            -0.9989813949620726,
+            0.0035952040814647953,
+            -0.044980518307864696
+          ],
+          "evidence": {
+            "assembly_path": "末端零件/末端装配.SLDASM",
+            "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+            "instance_id": "66",
+            "name": "法兰轴承F6806ZZ",
+            "native_path": "末端零件/法兰轴承F6806ZZ.SLDPRT",
+            "native_sha256": "5dbe31c2fbd078a17371e1c8a8b46bbf97d6d0ce4e3317fc3083e1c3e822cc9b",
+            "local_point_mm": [
+              0,
+              0,
+              0
+            ],
+            "local_axis": [
+              0,
+              0,
+              1
+            ],
+            "geometry_path": null,
+            "radius_mm": null,
+            "method": "saved_part_axis_hypothesis"
+          }
+        }
+      ],
+      "origin_xyz_m": [
+        -0.02647300696649535,
+        -0.0018983690498904698,
+        -0.001351331603395567
+      ],
+      "origin_rpy_rad": [
+        0,
+        0,
+        0
+      ],
+      "axis": [
+        -0.9989813949620727,
+        0.0035952040814645914,
+        -0.044980518307862594
+      ],
+      "origin_status": "model frame verified against independent FK",
+      "zero_definition": "saved CAD reference chosen as model q=0; hardware zero unknown",
+      "limits": null,
+      "actuators": [
+        "M2006_end_instance_43_ref_2",
+        "M2006_end_instance_46_ref_4"
+      ],
+      "transmission": {
+        "type": "two_motor_bevel_differential_CAD_supported",
+        "coupled_with": "joint_5_wrist_pitch",
+        "motor_to_joint_matrix": null,
+        "motor_to_joint_matrix_status": "hardware_signs_and_reductions_unverified",
+        "ratio_confirmed": false,
+        "measured_print_mesh_teeth": {
+          "output_bevel": 51,
+          "side_bevel": 18,
+          "side_pulley": 20,
+          "motor_pulley": 20
+        },
+        "ideal_side_pinion_to_output_mapping": {
+          "input": "two side pinion angles about common housing-fixed J5 axis",
+          "output": "carrier angle, spin angle with algebraically selected sign",
+          "matrix": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.17647058823529413,
+              -0.17647058823529413
+            ]
+          ],
+          "rank": 2,
+          "spin_sign_to_measured_J6_axis": null,
+          "assumptions": [
+            "both 18-tooth pinions mesh with the supplied 51-tooth gear",
+            "ideal rigid no-slip gearing; no backlash or elastic slip"
+          ],
+          "hardware_motor_to_joint_matrix": null,
+          "motor_internal_reduction_and_encoder_signs_included": false
+        },
+        "verification_report": "urdf_work/evidence/wrist_verification.json"
+      },
+      "geometry_status": "coaxial_geometry_supported",
+      "motion_status": "CAD_supported_output_chain_with_verified_model_frames",
+      "positive_direction_status": "not_motor_calibrated",
+      "user_confirmed": false,
+      "verification_report": "urdf_work/evidence/joint_motion_verification.json"
+    }
+  ],
+  "checks": [
+    {
+      "name": "yaw_coaxial",
+      "source": {
+        "point_mm": [
+          4.9681148084346205e-11,
+          1.539888216939289e-10,
+          -29.999999999998458
+        ],
+        "axis": [
+          -3.6372692933289076e-16,
+          4.691961483689576e-15,
+          -1.0
+        ],
+        "evidence": {
+          "assembly_path": "HZU工程完整装配.SLDASM",
+          "assembly_sha256": "ebe5ee91c2b694ea461e58dc52d67a2c4b7738d2c2e96cf157bcb62999113c35",
+          "instance_id": "4/245",
+          "name": "机械臂-固定板",
+          "native_path": "底架/机械臂-固定板.SLDPRT",
+          "native_sha256": "829fcbf189b4e72432d502ef8f049a5860be7e98564ae1e7208cdd63c3746951",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/底盘/机械臂-固定板X1.STEP",
+          "radius_mm": 26.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 1.6180473936712538e-10,
+      "parallel_error": 4.70603865725181e-15,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "yaw_coaxial",
+      "source": {
+        "point_mm": [
+          4.956746124662459e-11,
+          1.5404566511278972e-10,
+          -14.999999999998458
+        ],
+        "axis": [
+          6.722697266721505e-16,
+          -4.3331408438238564e-15,
+          1.0
+        ],
+        "evidence": {
+          "assembly_path": "HZU工程完整装配.SLDASM",
+          "assembly_sha256": "ebe5ee91c2b694ea461e58dc52d67a2c4b7738d2c2e96cf157bcb62999113c35",
+          "instance_id": "4/263",
+          "name": "交叉滚子轴承上垫板",
+          "native_path": "机械臂1/Yaw轴/交叉滚子轴承上垫板.SLDPRT",
+          "native_sha256": "9184f63834069996d11bdad1c11776ce01320b30d9ead7b73fde101eb034957a",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/底盘/交叉滚子轴承上垫板X1.STEP",
+          "radius_mm": 15,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 1.6182397892301804e-10,
+      "parallel_error": 4.384980747713081e-15,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "yaw_coaxial",
+      "source": {
+        "point_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "evidence": {
+          "assembly_path": "机械臂1/机械臂装配.SLDASM",
+          "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+          "instance_id": "4/7",
+          "name": "底板",
+          "native_path": "机械臂1/底板.SLDPRT",
+          "native_sha256": "39ece775d7dd255816093a0be5687fbda9e66fe954a9ae002af333131708465f",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/机械臂底座/底板X1.STEP",
+          "radius_mm": 10,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 0.0,
+      "parallel_error": 0.0,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "shoulder_coaxial",
+      "source": {
+        "point_mm": [
+          2.181739101676277e-14,
+          -54.999999999999986,
+          175.0
+        ],
+        "axis": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "evidence": {
+          "assembly_path": "机械臂1/机械臂装配.SLDASM",
+          "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+          "instance_id": "4/23",
+          "name": "8009侧板",
+          "native_path": "机械臂1/8009侧板.SLDPRT",
+          "native_sha256": "c4f9ebaa0e1db30c1f52abc52d3cbb279182426113482c5324475f2842ebf662",
+          "local_point_mm": [
+            0,
+            70,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/机械臂底座/8009侧板X1.STEP",
+          "radius_mm": 5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 2.181739101676277e-14,
+      "parallel_error": 0.0,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "shoulder_coaxial",
+      "source": {
+        "point_mm": [
+          -3.0411229090532288e-12,
+          -42.499999999999915,
+          174.9999999999918
+        ],
+        "axis": [
+          -4.256126800357895e-19,
+          -1.0,
+          3.48849753404729e-18
+        ],
+        "evidence": {
+          "assembly_path": "机械臂1/机械臂装配.SLDASM",
+          "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+          "instance_id": "101/107",
+          "name": "侧板大（左）",
+          "native_path": "机械臂1/侧板大（左）.SLDPRT",
+          "native_sha256": "686b1ebd9bb3b30b568563c6c2f339e9a6141cbbf2d70eff586b13460f3eccaa",
+          "local_point_mm": [
+            150,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/大臂/侧板大（左）X1.STEP",
+          "radius_mm": 5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 8.758775887810558e-12,
+      "parallel_error": 3.514364977981266e-18,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "elbow_coaxial",
+      "source": {
+        "point_mm": [
+          -300.00000000000307,
+          42.500000000000085,
+          174.9999999999918
+        ],
+        "axis": [
+          -2.77555756156289e-17,
+          1.0,
+          7.377054577201532e-18
+        ],
+        "evidence": {
+          "assembly_path": "机械臂1/机械臂装配.SLDASM",
+          "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+          "instance_id": "101/110",
+          "name": "侧板大（右）",
+          "native_path": "机械臂1/侧板大（右）.SLDPRT",
+          "native_sha256": "812f6aa2fd616a8c5b2dc1f49da3736fd21a3bdea1aa0e84001bbd4d4ad9965e",
+          "local_point_mm": [
+            150,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/大臂/侧板大（右）X1.STEP",
+          "radius_mm": 9,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 8.768684660186218e-12,
+      "parallel_error": 2.871920806690017e-17,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "elbow_coaxial",
+      "source": {
+        "point_mm": [
+          -300.00000000000256,
+          39.200000000000166,
+          174.99999999999199
+        ],
+        "axis": [
+          1.4865088789184067e-16,
+          -1.0,
+          -9.609389596972127e-17
+        ],
+        "evidence": {
+          "assembly_path": "机械臂1/机械臂装配.SLDASM",
+          "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+          "instance_id": "153/159",
+          "name": "侧板小（右）",
+          "native_path": "机械臂1/侧板小（右）.SLDPRT",
+          "native_sha256": "fea0d280c46b06f882f56270c1a70fde1240bbbb5e16f4520608afb35710e4e0",
+          "local_point_mm": [
+            105,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/小臂/侧板小（右）X1.STEP",
+          "radius_mm": 6,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 8.413210059787169e-12,
+      "parallel_error": 1.7700599795959512e-16,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "forearm_roll_coaxial",
+      "source": {
+        "point_mm": [
+          -506.0000000000029,
+          1.2000000000001871,
+          174.9999999999915
+        ],
+        "axis": [
+          1.0,
+          3.762858542932477e-17,
+          2.109423746787797e-15
+        ],
+        "evidence": {
+          "assembly_path": "机械臂1/机械臂装配.SLDASM",
+          "assembly_sha256": "9dd9906dcd2be101fac5d9bd859fb2ced2d3e79e12f9eab675f7de47a3450b7c",
+          "instance_id": "153/156",
+          "name": "固定板",
+          "native_path": "机械臂1/固定板.SLDPRT",
+          "native_sha256": "a40c9a2c029cefb7d47b9c524bd22fd9e3e1be1c7fd93373ed0bc055e26b4482",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/小臂/固定板X1.STEP",
+          "radius_mm": 12.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 2.6531134140228055e-13,
+      "parallel_error": 2.1097593355531527e-15,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "forearm_roll_coaxial",
+      "source": {
+        "point_mm": [
+          -547.9999999999972,
+          1.199999999999963,
+          174.99999999999164
+        ],
+        "axis": [
+          -1.0,
+          -1.1757513333741953e-15,
+          1.9163106616738331e-16
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "7",
+          "name": "joint4输出垫高板",
+          "native_path": "末端零件/joint4输出垫高板.SLDPRT",
+          "native_sha256": "a33fc15246bd125518d601b48332fd534adb60c48ce17456fec2742dad4aafae",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/末端/joint4输出垫高板x1.STEP",
+          "radius_mm": 12.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 0.0,
+      "parallel_error": 1.1912655721759302e-15,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "forearm_roll_coaxial",
+      "source": {
+        "point_mm": [
+          -551.999999999997,
+          1.199999999999946,
+          174.99999999999164
+        ],
+        "axis": [
+          -1.0,
+          -1.1387210281887832e-15,
+          1.7375689405910563e-16
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "10",
+          "name": "link3连接板(改)",
+          "native_path": "末端零件/link3连接板(改).SLDPRT",
+          "native_sha256": "9c584d6868b79ead4022af0a538b26cc423772198efc5a8589eff6413f8a273c",
+          "local_point_mm": [
+            43.825,
+            0,
+            35
+          ],
+          "local_axis": [
+            0,
+            1,
+            0
+          ],
+          "geometry_path": "加工/碳板/末端/link3连接板(改)x1.STEP",
+          "radius_mm": 12.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 1.709743457922741e-14,
+      "parallel_error": 1.1519014880936592e-15,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "wrist_pitch_coaxial",
+      "source": {
+        "point_mm": [
+          -650.9999999999973,
+          44.8856794057232,
+          178.49171016273652
+        ],
+        "axis": [
+          1.704022496595407e-15,
+          -0.9968209790238547,
+          -0.07967393411853056
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "69",
+          "name": "2006固定板",
+          "native_path": "末端零件/2006固定板.SLDPRT",
+          "native_sha256": "58ed434a9f7afc810d328c16bb01e81efa9351db9f142e3dd124a02661f46146",
+          "local_point_mm": [
+            0,
+            38.25,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/末端/2006固定板x2.STEP",
+          "radius_mm": 10.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 7.285258617859537e-14,
+      "parallel_error": 0.0,
+      "absolute_axis_dot": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "wrist_pitch_coaxial",
+      "source": {
+        "point_mm": [
+          -650.9999999999972,
+          -38.49839548962522,
+          171.82698557372117
+        ],
+        "axis": [
+          1.704022496595407e-15,
+          -0.9968209790238547,
+          -0.07967393411853056
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "72",
+          "name": "2006固定板",
+          "native_path": "末端零件/2006固定板.SLDPRT",
+          "native_sha256": "58ed434a9f7afc810d328c16bb01e81efa9351db9f142e3dd124a02661f46146",
+          "local_point_mm": [
+            0,
+            38.25,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/末端/2006固定板x2.STEP",
+          "radius_mm": 10.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 4.502339469080479e-14,
+      "parallel_error": 0.0,
+      "absolute_axis_dot": 1.0000000000000002,
+      "passed": true
+    },
+    {
+      "name": "wrist_pitch_coaxial",
+      "source": {
+        "point_mm": [
+          -650.9999999999968,
+          35.91429059450727,
+          177.77464475566964
+        ],
+        "axis": [
+          -1.2520255912515639e-15,
+          0.9968209790238546,
+          0.07967393411853112
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "91",
+          "name": "吸盘连接侧板",
+          "native_path": "末端零件/吸盘连接侧板.SLDPRT",
+          "native_sha256": "f3af2ac508b87e44c7aed0978f4576924c1d87799651376fd20f27e4b55164cd",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/末端/吸盘连接侧板X2.STEP",
+          "radius_mm": 10.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 5.107197335930706e-13,
+      "parallel_error": 7.158561262868181e-16,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "wrist_pitch_coaxial",
+      "source": {
+        "point_mm": [
+          -650.9999999999968,
+          -37.50157451060056,
+          171.90665950784006
+        ],
+        "axis": [
+          -1.6921702360653766e-15,
+          0.9968209790238546,
+          0.07967393411853095
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "94",
+          "name": "吸盘连接侧板",
+          "native_path": "末端零件/吸盘连接侧板.SLDPRT",
+          "native_sha256": "f3af2ac508b87e44c7aed0978f4576924c1d87799651376fd20f27e4b55164cd",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/末端/吸盘连接侧板X2.STEP",
+          "radius_mm": 10.5,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 4.739868513349753e-13,
+      "parallel_error": 3.887587731738424e-16,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "tool_spin_coaxial",
+      "source": {
+        "point_mm": [
+          -677.4730069664926,
+          1.2952729081585228,
+          173.80801626483327
+        ],
+        "axis": [
+          -0.9989813949620727,
+          0.0035952040814645914,
+          -0.044980518307862594
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "78",
+          "name": "吸盘固定板",
+          "native_path": "末端零件/吸盘固定板.SLDPRT",
+          "native_sha256": "f650779f52786df462a11f522fad1a9d8c0a8e4846c28fba0793801e6d5c406b",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": "加工/碳板/末端/吸盘固定板X1.STEP",
+          "radius_mm": 21,
+          "method": "STEP_cylinder_and_saved_instance_transform"
+        }
+      },
+      "line_distance_mm": 0.0,
+      "parallel_error": 0.0,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "tool_spin_coaxial",
+      "source": {
+        "point_mm": [
+          -674.9755534790874,
+          1.286284897956858,
+          173.92046756060333
+        ],
+        "axis": [
+          -0.9989813949620726,
+          0.0035952040814647953,
+          -0.044980518307864696
+        ],
+        "evidence": {
+          "assembly_path": "末端零件/末端装配.SLDASM",
+          "assembly_sha256": "7545898c8094d0ff9415a1af0d85127cf5591bf391ed3ab7d39017a1494ec296",
+          "instance_id": "66",
+          "name": "法兰轴承F6806ZZ",
+          "native_path": "末端零件/法兰轴承F6806ZZ.SLDPRT",
+          "native_sha256": "5dbe31c2fbd078a17371e1c8a8b46bbf97d6d0ce4e3317fc3083e1c3e822cc9b",
+          "local_point_mm": [
+            0,
+            0,
+            0
+          ],
+          "local_axis": [
+            0,
+            0,
+            1
+          ],
+          "geometry_path": null,
+          "radius_mm": null,
+          "method": "saved_part_axis_hypothesis"
+        }
+      },
+      "line_distance_mm": 2.0363149549459636e-12,
+      "parallel_error": 2.119291118072145e-15,
+      "absolute_axis_dot": 1.0,
+      "passed": true
+    },
+    {
+      "name": "wrist_axes_intersection_and_perpendicularity",
+      "line_distance_mm": 1.6653345369377348e-14,
+      "parallel_error": 1.0,
+      "absolute_axis_dot": 2.0773313624822265e-16,
+      "passed": true
+    }
+  ],
+  "excluded": [
+    {
+      "name": "金矿石",
+      "reason": "external grasped object, not a robot link"
+    },
+    {
+      "name": "真空泵/吸盘吸附",
+      "reason": "separate on/off action, not an extra rotational joint"
+    },
+    {
+      "name": "图传视场/UWB遮挡范围",
+      "reason": "annotation/sensor range, not physical robot geometry"
+    }
+  ],
+  "summary": {
+    "candidate_rotational_dof": 6,
+    "axis_checks": 17,
+    "axis_checks_passed": 17,
+    "limits_confirmed": 0,
+    "control_zero_confirmed": 0,
+    "all_geometric_checks_passed": true,
+    "mate_name_groups": 963,
+    "saved_pose_contexts": [
+      {
+        "path": "机械臂1/机械臂装配.SLDASM",
+        "consistent": 123,
+        "different": 1
+      },
+      {
+        "path": "末端零件/末端装配.SLDASM",
+        "consistent": 43,
+        "different": 0
+      }
+    ]
+  },
+  "model_frame_convention": "All link frames align with A at saved reference pose; child origin is its measured joint point",
+  "verification_summary": {
+    "axis_checks_passed": 22,
+    "kinematic_configurations_checked": 45,
+    "hierarchy_checks_passed": 6,
+    "hardware_calibrated": false,
+    "physical_limits_and_collisions_verified": false
+  }
+}

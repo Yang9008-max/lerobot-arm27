@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "status": "proposed_major_structure_groups_not_complete_mass_groups",
+  "ready_for_urdf_release": false,
+  "reference": "Instance IDs refer to the separately saved arm or end-effector assembly, not full-robot IDs.",
+  "groups": [
+    {
+      "link": "chassis_mount",
+      "description_zh": "底盘上的机械臂安装支撑",
+      "evidence": ["底架中的机械臂-固定板与回转轴承支撑"],
+      "note": "底架装配中包含会随回转运动的大带轮，不能把整个底架分装全部当成固定刚体。"
+    },
+    {
+      "link": "yaw_base",
+      "description_zh": "随底座回转的机械臂底座",
+      "assembly": "机械臂1/机械臂装配.SLDASM",
+      "major_support_instances": ["4/7", "4/10", "4/23"],
+      "saved_subassembly_prefix": "4",
+      "exceptions_requiring_rotor_or_race_split": ["4/13", "4/44", "4/61", "4/89", "4/92"],
+      "note": "8009 壳体随底座，电机输出和小带轮相对壳体转动。"
+    },
+    {
+      "link": "upper_arm",
+      "description_zh": "大臂框架",
+      "assembly": "机械臂1/机械臂装配.SLDASM",
+      "major_support_instances": ["101/104", "101/107", "101/110", "101/150"],
+      "saved_subassembly_prefix": "101",
+      "additional_motor_housing_candidate": "212",
+      "note": "肘部 8009 壳体预计随大臂，转子/输出连接件需要与壳体拆分。"
+    },
+    {
+      "link": "forearm",
+      "description_zh": "小臂框架及 GM6020 固定端",
+      "assembly": "机械臂1/机械臂装配.SLDASM",
+      "major_support_instances": ["153/156", "153/159", "153/162", "153/165"],
+      "saved_subassembly_prefix": "153",
+      "additional_output_connection_candidate": "209",
+      "motor_housing_in_end_assembly": "4",
+      "note": "GM6020 原生零件同时表现电机整体，不能直接作为真实转子与定子两个刚体。"
+    },
+    {
+      "link": "wrist_housing",
+      "description_zh": "GM6020 输出侧连接框架、两台 2006 的固定支撑",
+      "assembly": "末端零件/末端装配.SLDASM",
+      "major_support_instances": ["7", "10", "13", "16", "61", "69", "72"],
+      "motor_housing_candidates": ["43", "46"],
+      "note": "两台 2006 的输入轮及锥齿轮相对框架转动，不合并为该刚体。"
+    },
+    {
+      "link": "wrist_carrier",
+      "description_zh": "绕两侧支撑轴俯仰的吸盘支架",
+      "assembly": "末端零件/末端装配.SLDASM",
+      "major_support_instances": ["91", "94", "77", "90", "78"],
+      "note": "吸盘固定板的中心孔用于支撑自转轴，孔轴位置可以确定 J6 轴线，但固定板自身不因此归入 J6 旋转件。"
+    },
+    {
+      "link": "suction_tool",
+      "description_zh": "吸盘自转侧",
+      "assembly": "末端零件/末端装配.SLDASM",
+      "rotating_part_candidates": ["37", "63", "81", "84", "87"],
+      "note": "万向接头 34 的被动顺应自由度尚未确定；不能仅凭名称增加可控关节。"
+    }
+  ],
+  "drivetrain_parts_not_assigned_as_fixed_visuals": {
+    "end_assembly_instances": ["22", "25", "40", "47", "51", "52"],
+    "reason": "差动输入转子与齿轮应在耦合确定后表示；不把齿轮错误焊死在俯仰支架上。"
+  },
+  "notes": [
+    "主要结构分组是候选，尚未逐一分配紧固件与质量。",
+    "原生轴承/电机可能将多个相对运动实体放在一个零件文件中，需要拆分或明确简化。",
+    "第一版运动链可使用六个输出侧关节；齿轮的细节运动和真实执行器到关节映射单独验证。"
+  ]
+}
