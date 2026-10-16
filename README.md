@@ -300,3 +300,12 @@ python -m pip install -r models/hzu_robot/requirements.txt
 python tools/view_hzu.py --check
 python tools/view_hzu.py
 ```
+
+## HZU 完整工程资料
+
+[完整工程快照与还原说明](projects/HZU工程机器人/README.md)包含 3,057 个文件，其中 545 个为原始 CAD、图纸和说明资料，另含 URDF、网格、处理脚本、配置及验证记录。大文件使用 117 个 ZIP64 分卷保存，提供逐文件 SHA-256 清单和仅依赖 Python 标准库的还原脚本。缓存、锁文件及上传暂存目录未收录。
+
+```powershell
+python "projects/HZU工程机器人/restore_project.py" --check
+python "projects/HZU工程机器人/restore_project.py" --output "D:/HZU工程机器人"
+```
